@@ -1,6 +1,7 @@
 $(function(){
   $("#quiz").submit(function(event){
     event.preventDefault();
+    var name = $("#name").val();
     var color = $("#color").val();
     var age = parseInt($("#age").val());
     var number = parseInt($("#number").val());
