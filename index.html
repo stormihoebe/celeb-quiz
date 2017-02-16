@@ -5,9 +5,43 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Celebrity Dating Quiz</title>
   </head>
-  <body>
+  <body class="container">
+    <div class="jumbotron">
+      <h1>Celibrity Dating Quiz</h1>
+    </div>
+    <div class="row">
+      <form id="quiz">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input id="name" type="text" name="name" value="" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input id="age" type="number" name="name" value="" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="number">Favorite Number:</label>
+          <input id="number" type="number" name="name" value="" class="form-control">
+        </div>
+        <button class="btn btn-success"type="submit" name="button">Submit</button>
+      </form>
+    </div>
+    <div class="row celebrities">
+      <div class="celeb tonyStark">
+        <h2>Tony Stark</h2>
+        <img src="img/tony.jpeg" alt="photo of tony Stark" width="100%">
+      </div>
+      <div class="celeb natasha">
+        <h2>Natasha Romanova</h2>
+        <img src="img/natasha.jpg" alt="photo of Black Widow" width="100%">
+      </div>
 
+    </div>
   </body>
 </html>
