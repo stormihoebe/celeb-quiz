@@ -6,17 +6,19 @@ $(function(){
     var number = parseInt($("#number").val());
 
     $(".celeb").hide();
+    if (age && name && number){
+      if (color === "#000000") {
+        $(".natasha").show();
+      } else if (age > 45 && number > 100 ) {
+        $(".tonyStark").show();
+        console.log("This part is working")
+      } else {
+        $(".natasha").show();
 
-    if (color === "#000000") {
-      $(".natasha").show();
-    } else if (age > 45 && number > 100 ) {
-      $(".tonyStark").show();
-      console.log("This part is working")
+      };
     } else {
-      $(".natasha").show();
-
-    };
-
+      alert("Please fill in all fields")
+    }
   });
 
 });
